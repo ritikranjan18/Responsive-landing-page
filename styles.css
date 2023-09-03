@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    background: linear-gradient(to right, #0073e6, #00c3ff);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.content {
+    padding: 100px;
+}
+
+/* Change the style on hover */
+#navbar a:hover {
+    color: #0073e6;
+}
+
+/* Change the style when scrolled */
+#navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#navbar.scrolled a {
+    color: #333;
+}
